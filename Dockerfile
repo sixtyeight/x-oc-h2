@@ -10,6 +10,4 @@ EXPOSE 9092
 EXPOSE 8082
 VOLUME /home/h2/dbs
 
-RUN mkdir /home/h2/dbs
-
 CMD ["java", "-cp", "h2.jar", "org.h2.tools.Server", "-tcpAllowOthers", "-webAllowOthers" , "-baseDir", "/home/h2/dbs"]
