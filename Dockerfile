@@ -8,6 +8,7 @@ COPY h2*.jar /home/h2/h2.jar
 
 EXPOSE 9092
 EXPOSE 8082
+VOLUME /home/h2/dbs
 
 RUN mkdir /home/h2/dbs
 
