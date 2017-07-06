@@ -4,7 +4,7 @@ RUN useradd --create-home -s /bin/bash h2
 WORKDIR /home/h2
 USER h2 
 
-COPY h2*.jar /home/h2/h2.jar
+COPY h2-1.3.176.jar /home/h2/h2.jar
 
 EXPOSE 9092
 EXPOSE 8082
